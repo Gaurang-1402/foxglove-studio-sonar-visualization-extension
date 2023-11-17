@@ -46,19 +46,19 @@ function SonarPanel({ context }: { context: PanelExtensionContext }): JSX.Elemen
 
   // Display sonar data if available
   const sonarDisplay = sonarMessage ? (
-    <>    
-    <p>Sonar range: {sonarMessage.message.range.toFixed(5)} meters</p>
-    <p>Max range: {sonarMessage.message.max_range.toFixed(5)} meters</p>
-    <p>Min range: {sonarMessage.message.min_range.toFixed(5)} meters</p>
-    <p>Field of view: {sonarMessage.message.field_of_view.toFixed(5)} degrees</p>
-    <p>Radiation type: {sonarMessage.message.radiation_type} </p>
-    <h2>Sonar Range Gauge</h2>
+    <>
+      <p>Sonar range: {sonarMessage?.message.range.toFixed(5)} meters</p>
+      <p>Max range: {sonarMessage?.message.max_range.toFixed(5)} meters</p>
+      <p>Min range: {sonarMessage?.message.min_range.toFixed(5)} meters</p>
+      <p>Field of view: {(sonarMessage?.message.field_of_view * 180 / Math.PI).toFixed(5)} degrees</p>
+      <p>Radiation type: {sonarMessage?.message.radiation_type === 0 ? 'Ultrasound' : 'Unknown'}</p>
+      <h2>Sonar Range Gauge</h2>
       <GaugeChart 
         id="sonar-gauge"
         nrOfLevels={30}
         percent={getGaugeValue()}
         arcWidth={0.3}
-        colors={["#FF5F6D", "#FFC371"]} // Example color range
+        colors={["#FF5F6D", "#FFC371"]}
         textColor={"#000000"}
         needleColor={"#464A4F"}
         needleBaseColor={"#464A4F"}
@@ -66,14 +66,13 @@ function SonarPanel({ context }: { context: PanelExtensionContext }): JSX.Elemen
       <p>Current Sonar Range: {sonarMessage ? `${sonarMessage.message.range.toFixed(2)} meters` : "No data"}</p>
     </>
 
-
   ) : (
     <p>No sonar data available.</p>
   );
 
   return (
     <div style={{ padding: "1rem" }}>
-      <h2>Welcome to the SONAR extension panel!</h2>
+      <h2>Sonar visualization panel!</h2>
       {sonarDisplay}
     </div>
   );

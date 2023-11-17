@@ -1,6 +1,7 @@
 {
   "name": "Sonar Visualization",
   "displayName": "sonar-visualization",
+  "publisher": "Gaurang Ruparelia",
   "description": "The Sonar Visualization extension for Foxglove Studio provides a real-time graphical display of sonar sensor data, enhancing the understanding of spatial measurements and environmental awareness for robotic applications. It features an intuitive gauge display, representing the range data from sonar sensors within specified limits. This tool is essential for users requiring clear and immediate feedback on proximity and distance measurements, crucial in navigation and obstacle avoidance scenarios. Designed with simplicity and usability in mind, the Sonar Visualization extension is a valuable addition to any robotics toolkit.",  
   "homepage": "",
   "version": "0.0.1",
