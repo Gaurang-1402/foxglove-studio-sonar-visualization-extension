@@ -1,0 +1,47 @@
+{
+  "name": "Sonar Visualization",
+  "displayName": "sonar-visualization",
+  "description": "The Sonar Visualization extension for Foxglove Studio provides a real-time graphical display of sonar sensor data, enhancing the understanding of spatial measurements and environmental awareness for robotic applications. It features an intuitive gauge display, representing the range data from sonar sensors within specified limits. This tool is essential for users requiring clear and immediate feedback on proximity and distance measurements, crucial in navigation and obstacle avoidance scenarios. Designed with simplicity and usability in mind, the Sonar Visualization extension is a valuable addition to any robotics toolkit.",  
+  "homepage": "",
+  "version": "0.0.1",
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "main": "./dist/extension.js",
+  "keywords": [],
+  "scripts": {
+    "build": "foxglove-extension build",
+    "foxglove:prepublish": "foxglove-extension build --mode production",
+    "lint:ci": "eslint --report-unused-disable-directives .",
+    "lint": "eslint --report-unused-disable-directives --fix .",
+    "local-install": "foxglove-extension install",
+    "package": "foxglove-extension package",
+    "pretest": "foxglove-extension pretest"
+  },
+  "devDependencies": {
+    "@foxglove/eslint-plugin": "1.0.1",
+    "@foxglove/studio": "1.77.0",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "@types/react-gauge-chart": "^0.4.3",
+    "@typescript-eslint/eslint-plugin": "6.11.0",
+    "@typescript-eslint/parser": "6.11.0",
+    "create-foxglove-extension": "0.8.6",
+    "eslint": "8.53.0",
+    "eslint-config-prettier": "8.10.0",
+    "eslint-plugin-es": "4.1.0",
+    "eslint-plugin-filenames": "1.3.2",
+    "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-jest": "27.6.0",
+    "eslint-plugin-prettier": "5.0.1",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "3.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.2.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "lodash.isequal": "^4.5.0",
+    "react-gauge-chart": "^0.4.1"
+  }
+}
