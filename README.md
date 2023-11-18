@@ -14,3 +14,34 @@
 
 ## _A Foxglove Studio Extension_
 
+The Sonar Visualization panel is a Foxglove Studio extension designed for real-time monitoring of ultrasonic sensor data. It provides a clear gauge display of the current sonar range against the backdrop of minimum and maximum thresholds. It uses ROS2 message format ```sensor_msgs/msg/Range```
+
+Here is the ROS2 message format
+
+```
+
+  "header": {
+    "stamp": {
+      "sec": 9698,
+      "nsec": 24000000
+    },
+    "frame_id": "sonar_link"
+  },
+  "radiation_type": 0,
+  "field_of_view": 0.23999999463558197,
+  "min_range": 0.019999999552965164,
+  "max_range": 10,
+  "range": 0.03500651568174362
+}
+```
+
+### Dependencies
+
+```
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "lodash.isequal": "^4.5.0",
+    "react-gauge-chart": "^0.4.1"
+  }
+
+```
