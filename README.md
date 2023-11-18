@@ -1,7 +1,9 @@
 # sonar-visualization
 
 ## Demo
-![ezgif com-gif-maker](https://github.com/Gaurang-1402/foxglove-studio-sonar-visualization-extension/assets/71042887/122deb30-4553-43d4-a7af-e5ea4208a125)
+
+![ezgif com-gif-maker](https://github.com/Gaurang-1402/foxglove-studio-sonar-visualization-extension/assets/71042887/5d51e4ec-d778-48d9-b8ff-d42e535e20a0)
+
 
 ## _A Foxglove Studio Extension_
 
@@ -28,10 +30,10 @@ Here is the ROS2 message format
 
 ### Extension panel
 
-![Screenshot from 2023-11-17 20-55-11](https://github.com/Gaurang-1402/foxglove-studio-sonar-visualization-extension/assets/71042887/96555e4f-19d8-43f4-8987-e1c50a2f645f)
+![Screenshot from 2023-11-18 11-38-35](https://github.com/Gaurang-1402/foxglove-studio-sonar-visualization-extension/assets/71042887/55301814-04db-4a75-b15d-70577846b869)
 
 
-![Screenshot from 2023-11-17 20-55-46](https://github.com/Gaurang-1402/foxglove-studio-sonar-visualization-extension/assets/71042887/13e58e9d-9615-47f6-b033-4e9ca4073def)
+![Screenshot from 2023-11-17 20-55-46](https://github.com/Gaurang-1402/foxglove-studio-sonar-visualization-extension/assets/71042887/1634f89e-c863-4cf1-8ab2-24de7a875280)
 
 
 
